@@ -1,0 +1,46 @@
+html, body, #root {
+    height: 100%;
+    width: 100%;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.App>.Header {
+    grid-column: 12 span;
+    grid-row: 1 span;
+    background-color: #425F57;
+}
+
+.App>.Main {
+    grid-column: 12 span;
+    grid-row: 10 span;
+    background-color: #749F82;
+}
+
+.App>.Footer {
+    grid-column: 12 span;
+    grid-row: 1 span;
+    background-color: #425F57;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main>img {
+    width: 30%;
+}
